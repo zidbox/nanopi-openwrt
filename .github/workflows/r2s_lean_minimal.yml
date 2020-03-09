@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - '.github/workflows/r2s_lean_minimal.yml_'
+      - '.github/workflows/r2s_lean_minimal.yml'
   schedule:
     - cron: '10 08 * * *'
 
@@ -84,11 +84,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin=y
-          CONFIG_PACKAGE_luci-app-ssrserver-python=y
           CONFIG_PACKAGE_luci-app-uhttpd=y
           CONFIG_PACKAGE_luci-app-unblockmusic=y
-          CONFIG_PACKAGE_luci-app-v2ray-server=y
-          CONFIG_PACKAGE_luci-app-vssr=y
           CONFIG_PACKAGE_luci-app-watchcat=y
           CONFIG_PACKAGE_luci-theme-argon=y
           CONFIG_PACKAGE_luci-theme-material=y
@@ -96,6 +93,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-unblockmusic=y
           CONFIG_UnblockNeteaseMusic_Go=y
           CONFIG_UnblockNeteaseMusic_NodeJS=y
+          CONFIG_PACKAGE_luci-app-pptp-server=y
           # CONFIG_PACKAGE_iptables-mod-conntrack-extra is not set
           # CONFIG_PACKAGE_iptables-mod-ipopt is not set
           # CONFIG_PACKAGE_kmod-crypto-authenc is not set
